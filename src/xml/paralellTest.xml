@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite1" parallel="tests" thread-count="2">
+    <test name="test1" >
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="username" value="testermehmet@gmail.com"></parameter>
+        <parameter name="password" value="123456"></parameter>
+
+        <classes>
+            <class name="test1.ContactUsPom">
+            </class>
+        </classes>
+    </test>
+    <test name="test2">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="username" value="testermehmet@gmail.com"></parameter>
+        <parameter name="password" value="123456"></parameter>
+        <classes>
+            <class name="test2.ProductPom">
+            </class>
+        </classes>
+    </test>
+</suite>
